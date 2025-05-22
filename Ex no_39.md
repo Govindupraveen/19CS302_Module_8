@@ -1,51 +1,39 @@
-# EX 39 C program to find sum of digits.
-## DATE:
+
+# EX 39: program to find sum of digits.
+## DATE: 
 ## AIM:
 To write a C program to find sum of digits.
 
-
 ## Algorithm
-1. Start 
-2. Declare variables for the number (n), remainder (digit), and sum (sum = 0).
-3. Read the number from the user using scanf().
-4. Repeat while n > 0:
-5. After the loop ends, the variable sum contains the sum of all digits.
-6. Display the result using printf().  
-7. End.
+1. Start.
+2. Define a variables.
+3. Write a program to print the English word corresponding to the given number.
+4. Read the value using scanf.
+5. Ask the user to make an input.
+6. Print out the answer.
+7. End.  
 
 ## Program:
 ```
-/*
-C program to find sum of digits.
-Developed by: Karthick Kannan SP
-RegisterNumber:  212222060114
-*/
-
-#include <stdio.h>
-
-int main() {
-    int n, digit, sum = 0;
-
-    printf("Enter a number: ");
-    scanf("%d", &n);
-
-    while (n > 0) {
-        digit = n % 10;
-        sum += digit;
-        n = n / 10;
+#include<stdio.h>
+int main()
+{
+    int a,s,i,y=0;
+    scanf("%d",&a);
+    for(i=1;i<=5;i++)
+    {
+        s=a%10;
+        y=y+s;
+        a=a/10;
     }
-
-    printf("Sum of digits = %d\n", sum);
-
-    return 0;
+    printf("%d",y);
 }
 ```
-
 ## Output:
 
-![image](https://github.com/user-attachments/assets/5379dc90-59bc-4083-bd55-859ac2356248)
+![image](https://github.com/user-attachments/assets/e61587a1-a6b9-45e8-873e-8cc198ab63b8)
 
 
 
 ## Result:
-Thus the program was executed and the output was verified successfully
+Thus the program was executed and the output was verified successfully.
